@@ -1,5 +1,6 @@
 package ru.shibanov.rest.FirstRestApp.controllers;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import ru.shibanov.rest.FirstRestApp.util.PersonNotFoundException;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Tag(name = "people_controller")
 @RestController
 @RequestMapping("/people")
 public class PeopleController {
